@@ -342,6 +342,8 @@ ggplot(pred, aes(x=ds, y=yhat)) +
 
 Prophet tiene menos precision que ARIMA como se puede observar en el grafico.
 
+
+
 ##Prediccion de los ultimos 3 años con Arima y Prophet
 ```{r}
 train <- head(consumoGS_ts, round(length(consumoGS_ts) * 0.891632653))
@@ -562,5 +564,3 @@ ggplot(pred, aes(x=ds, y=yhat)) +
 
 ```
 Como se puede observar, el ARIMA tuvo una mejor prediccion.
-
-
